@@ -58,4 +58,3 @@ print(type(name))
 age = int(input('please enter your age :'))
 print(age-1)
 print(type(age))
-
