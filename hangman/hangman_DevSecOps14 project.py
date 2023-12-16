@@ -1,5 +1,5 @@
 import random
-words = ["secret", "random", "temple", "stupid", "sleep"]
+words = ["secret", "random", "temple", "stupid", "sleep"] # Function to choose a random word from a predefined list
 word = random.choice(words)
 
 name = input("What is your name? ")
@@ -7,11 +7,11 @@ print("Hello, " + name, "Lets play hangman!")
 
 print("Start guessing...")
 
-guesses = ''
+guesses = '' # creates an variable with an empty value
 
 turns = 15
 
-while turns > 0:
+while turns > 0: # creates the loop for the game to function with conditions
     failed = 0
     for char in word:
         if char in guesses:
